@@ -1,0 +1,56 @@
+.emptywatchlist_div{
+  width: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: start;
+  margin-top: 60px;
+}
+
+
+.emptywatchlist_div img{
+  width: 260px;
+  height: 180px;
+  filter: grayscale(0.9);
+}
+
+.emptywatchlist_div p{
+  text-align: center;
+}
+
+.emptywatchlist_div .p1{
+  font-size: 24px;
+  font-weight: 700;
+  color: #2B2B2B;
+  margin-top: 20px;
+}
+
+.emptywatchlist_div .p2{
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 12px;
+  font-weight: 500;
+  color: rgb(43, 43, 43, 0.4);
+  width: 380px;
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+  .emptywatchlist_div img{
+    width: 200px;
+    height: 140px;
+  }
+  
+  .emptywatchlist_div .p1{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .emptywatchlist_div .p2{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    width: 300px;
+  }
+  
+
+} 

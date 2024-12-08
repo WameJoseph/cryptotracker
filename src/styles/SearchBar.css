@@ -1,0 +1,173 @@
+.searchbar{
+  width: 100%;
+  min-height: 58px;
+  background-color: #F1F5F9;
+  border-radius: 12px;
+  border: solid 2px #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 16px;
+}
+
+.searchbar .search_icon{
+  width: 26px;
+  height: 26px;
+  color: #ABAFB7;
+}
+
+.searchbar form{
+  width: 100%;
+  height: 100%;
+}
+/* listcryptos */
+.searchbar form input{
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f1f1f;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 96%;
+  height: 100%;
+}
+
+.searchbar form input:{
+  
+}
+
+
+.searchbar form input::placeholder{
+  font-size: 16.8px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #ABAFB7;
+}
+
+.searchbar .cmd_shorcut{
+  width: fit-content;
+  display: flex; align-items: center; justify-content: right;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.searchbar .cmd_shorcut p{
+  width: 36px; height: 36px;
+  font-size: 20px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; border-radius: 6px;
+  background-color: #D7DFEF;
+  color: #858C99;
+}
+
+
+/* Modal container */
+.search_modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.4); */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  z-index: 1000;
+  padding: 60px 6.6%;
+
+}
+
+/* Modal content */
+.modal_content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal search bar */
+.modal_content form input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 8px 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f1f5f9;
+  color: #1f1f1f;
+}
+
+/* Cancel button */
+.cancel_button {
+  min-width: 48px; display: flex; align-items: center; justify-content: center;
+  min-height: 48px;
+  background-color: #EEEEEE;
+  border: solid #E0E0E0 1.6px;
+  margin-left: auto;
+  margin-bottom: 16px;
+  border-radius: 300px;
+  color: #000001;
+  cursor: pointer;
+}
+
+/* Cancel button */
+.cancel_button .close_icon{
+  color: #000001;
+  width: 26.8px;
+  height: 26.8px;
+}
+
+.cancel_button:hover {
+  background-color: #c3cad6;
+}
+
+.listcryptos{
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: fit-content;
+  margin-top: 10px;
+  overflow: scroll;
+  margin-bottom: -15px;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .searchbar{
+    min-height: 50px;
+    padding: 0 16px;
+  }
+
+  .searchbar .search_icon{
+    width: 22px;
+    height: 22px;
+  }  
+
+  .searchbar form input{
+    font-size: 16.8px;
+    font-weight: 500;
+    margin-left: 14px;
+    width: 98%;
+  }  
+
+  .searchbar form input::placeholder{
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .searchbar .cmd_shorcut{
+    display: none;
+  }
+
+
+
+}

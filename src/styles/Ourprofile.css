@@ -1,0 +1,84 @@
+.our_profile_div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  /* border: solid; */
+  margin-top: 30px;
+}
+
+.our_profile_div img{
+  width: 70px; height: 70px;
+  border-radius: 600px;
+}
+
+.our_profile_div .userimg{
+  width: 70px; height: 70px;
+  border-radius: 600px;
+  background-image: url(../assets/images/userimg1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.our_profile_div span {
+  display: flex; flex-direction: column;
+  align-items: start; justify-content: center;
+  row-gap: 4px;
+}
+
+.our_profile_div span .pp1{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.our_profile_div span .pp2{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(43, 43, 43, 0.5);
+}
+
+.our_profile_div_listcryptos{
+  overflow: visible !important;
+}
+
+.team_profile_desc{
+  width: 100%;
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(43, 43, 43, 0.5);
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .our_profile_div{
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .our_profile_div img{
+    width: 50px; height: 50px;
+  }
+  
+  .our_profile_div .userimg{
+    width: 50px; height: 50px;
+  }
+
+  .our_profile_div span {
+    row-gap: 2px;
+  }
+
+  .our_profile_div span .pp1{
+    font-size: 18px;
+  }
+  
+  .our_profile_div span .pp2{
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,168 @@
+*{
+  /* outline: solid red; */
+}
+
+.AccountBalance_div{
+  width: 100%;
+  min-height: 140px;
+  border-radius: 24px;
+  background-color: #103D24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.AccountBalance_div .account_div{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.AccountBalance_div .account_div span{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+
+.AccountBalance_div .account_div span .p1{
+  font-size: 16px;
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.AccountBalance_div .account_div span .p2{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.AccountBalance_div .account_div span .account_balance_text{
+  font-size: 38px;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 1);
+}
+
+.AccountBalance_div .account_div span .account_growth_percent_text{
+  font-size: 18px;
+  font-weight: 700;
+  color: #103D24;
+  background-color: #2DED80;
+  padding: 10px 14px;
+  margin-left: 10px;
+}
+
+.AccountBalance_div .plus_sign{
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 60px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.AccountBalance_div .plus_sign .plus_icon{
+  width: 28px;
+  height: 28px;
+  color: #1f1f1f;
+}
+
+.account_balance_modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 20px;
+  row-gap: 14px;
+  width: 100%;
+}
+
+.modal_backdrop .modal_content .account_balance_modal img{
+  width: 100px;
+  height: 100px;
+}
+
+.modal_backdrop .modal_content .account_balance_modal form{
+  width: 100%;
+  display: flex; flex-direction: column; align-items: center;
+  /* border: solid; */
+  row-gap: 14px;
+}
+
+.modal_backdrop .modal_content .account_balance_modal form input{
+  width: 100%;
+  display: flex; flex-direction: column; align-items: center;
+  border-radius: 60px;
+  height: 60px;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.modal_backdrop .modal_content .account_balance_modal form button{
+  width: 100%;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 60px;
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+  .AccountBalance_div{
+    min-height: 110px;
+    border-radius: 20px;
+    padding: 0 24px;
+    gap: 0;
+  }
+
+  .AccountBalance_div .account_div{
+    row-gap: 8px;
+    width: fit-content;
+
+  }
+
+  .AccountBalance_div .account_div span{
+    gap: 4px;
+  }
+  
+  .AccountBalance_div .account_div span .p1{
+    font-size: 14px;
+  }
+  
+  .AccountBalance_div .account_div span .p2{
+    font-size: 14px;
+  }
+  
+  .AccountBalance_div .account_div span .account_balance_text{
+    font-size: 24px;
+  }
+  
+  .AccountBalance_div .account_div span .account_growth_percent_text{
+    font-size: 14px;
+    padding: 6px 8px;
+    margin-left: 6px;
+  }
+
+  .AccountBalance_div .plus_sign{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .AccountBalance_div .plus_sign .plus_icon{
+    width: 20px;
+    height: 20px;
+  }
+
+}

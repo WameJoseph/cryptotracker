@@ -1,0 +1,136 @@
+.coinadded_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: fit-content;
+  gap: 16px;
+  margin: 0px 0;
+}
+
+.coinadded_container .coincard{
+  height: 180px;
+  padding-left: 40px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: rgb(238, 238, 238, 0.6);
+  border: solid 1px rgb(214, 214, 214, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 8px;
+  cursor: pointer;
+}
+
+.coinadded_container .coincard:hover{
+  background-color: rgba(222, 222, 222, 0.9);
+}
+
+.coinadded_container .coincard .top_part{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.coinadded_container .coincard .top_part img{
+  width: 50px;
+  height: 50px;
+}
+
+.coinadded_container .coincard .top_part .crypto_name_and_abbv{
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(43, 43, 43, 0.4);
+  text-transform: uppercase;
+}
+
+.coinadded_container .coincard .top_part .crypto_name_and_abbv b{
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(43, 43, 43, 0.8);
+  text-transform: capitalize;
+  margin-right: 6px;
+}
+
+.coinadded_container .coincard .bottom_part{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.coinadded_container .coincard .bottom_part .crypto_price{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(43, 43, 43, 1);
+}
+
+.coinadded_container .coincard .bottom_part .crypto_percent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  /* background-color: #FF6E69;
+  color: #6D0401; */
+  font-size: 18.8px;
+  font-weight: 600;
+}
+
+.coinadded_container .coincard .bottom_part .crypto_percent.positive{
+  background-color: #103D24;
+  color: #2DED80;
+}
+
+.coinadded_container .coincard .bottom_part .crypto_percent.negative{
+  background-color: #FF6E69;
+  color: #6D0401;
+}
+
+
+/* .modal_backdrop .coinadded .modal_details .crypto_price{
+  font-size: 10px !important;
+  text-align: center;
+} */
+
+@media screen and (max-width: 650px) {
+
+
+.coinadded_container .coincard{
+  height: 130px;
+  padding-left: 20px;
+  border-radius: 20px;
+  row-gap: 8px;
+}
+
+.coinadded_container .coincard .top_part{
+  gap: 12px;
+}
+
+.coinadded_container .coincard .top_part img{
+  width: 28px;
+  height: 28px;
+}
+
+.coinadded_container .coincard .top_part .crypto_name_and_abbv{
+  font-size: 14px;
+}
+
+.coinadded_container .coincard .top_part .crypto_name_and_abbv b{
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.coinadded_container .coincard .bottom_part .crypto_price{
+  font-size: 26px;
+}
+
+.coinadded_container .coincard .bottom_part .crypto_percent{
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+
+}
