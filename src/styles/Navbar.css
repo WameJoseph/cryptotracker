@@ -5,6 +5,8 @@
     border-top: solid 1.6px #D4D4D4;
     position: sticky; /* Change from sticky to fixed */
     bottom: 0; /* Ensure it's at the bottom */
+    top: 0;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
