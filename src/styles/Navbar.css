@@ -39,8 +39,6 @@
     .nav {
       min-height: 80px;
       padding: 0 9%;
-    position: fixed; /* Change from sticky to fixed */
-
     }
   
     .nav .nav_item .i {
